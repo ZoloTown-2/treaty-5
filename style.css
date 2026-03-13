@@ -1,15 +1,23 @@
+/* Changes the background colour of the website. */
 body {
   background-color: #ffffa0;
 }
+/* The navigation list will be a flexbox with items spaced around each other, and no leftward indentation. */
 nav ul {
   display: flex;
   justify-content: space-around;
   padding-left: 0;
 }
+/* Navigation list items are both inline and centered. */
 nav ul li {
   display: inline;
   text-align: center;
 }
+/*
+  The links within navigation list items are inline-blocks, black, and have a 2px border, 5px of padding
+  all around, a width of 20 viewport-width (changes depending on the width of the viewport), and a yellow-ish
+  background colour.
+*/
 nav ul li a {
   display: inline-block;
   border: 2px solid black;
@@ -17,20 +25,22 @@ nav ul li a {
   width: 20vw;
   color: black;
   background-color: #dddd80;
-}
-nav ul li a {
   text-decoration-line: none;
 }
+/* Any image figures will be flexboxes that evenly space their items (images). */
 figure {
   display: flex;
   justify-content: space-evenly;
 }
+/* Hyperlinks/anchors will be brown-ish. */
 a {
   color: #555510;
 }
+/* Hyperlinks/anchors will be red when hovered over with a mouse cursor. */
 a:hover {
   color: red;
 }
+/* Any heading will be centered. */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }

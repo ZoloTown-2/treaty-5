@@ -13,18 +13,36 @@
   <title>Main Page - Treaty #5 Website</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    section#parties-and-promises ul#involved-nations {
+    /* Text marked as "important" will be bolded and underlined. */
+    .important {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    /*
+      The "involved-nations" unordered list within the "pnp-involved-nations" div within the "parties-and-promises"
+      section will have a background colour of a shaded yellow.
+    */
+    section#parties-and-promises div#pnp-involved-nations ul#involved-nations {
       background-color: #dddd80; 
     }
-    section#parties-and-promises ol#promises {
+    /* 
+      The "promises" ordered list within the "pnp-promises" div within the "parties-and-promises" section will
+      have a background colour of a shaded yellow, as well as vertical padding.
+    */
+    section#parties-and-promises div#pnp-promises ol#promises {
       background-color: #dddd80;
       padding-top: 20px;
       padding-bottom: 20px;
     }
-    section#parties-and-promises ol#promises li.even-ol-item {
+    /*
+      The even list items within the "promises" ordered list within the "parties-and-promises" section within the
+      "pnp-promises" div will have some margin, as well as a noticable left indent.
+    */
+    section#parties-and-promises div#pnp-promises ol#promises li.even-ol-item {
       margin: 10px;
       margin-left: 30px;
     }
+    /* "pnp" stands for "parties and promises" */
   </style>
 </head>
 <body>
@@ -37,6 +55,7 @@
         <li><a href="index.html#modern-implementation">Modern Implementation</a></li>
       </ul>
       <hr />
+      <!-- This H1 tag will be itailc. -->
       <h1 style="font-style: italic;">Treaty #5 Website</h1>
       <hr />
     </nav>
@@ -51,13 +70,13 @@
     </section>
     <section id="locations">
       <h2>Locations</h2>
-      <p>Treaty 5 was negotiated at Berens River and Norway House in 1875.</p>
+      <p>Treaty 5 was negotiated at <span class="important">Berens River</span> and <span class="important">Norway House</span> in 1875.</p>
       <figure>
         <img src="images/berens-river.jpg" alt="A high-up view of Berens River, catching a lake and neighbouring trees." />
         <img src="images/norway-house.jpg" alt="A high-up view of Norway House." />
       </figure>
       <p>
-        Treaty 5 mainly consists of the mid-south area of what now is Manitoba, reaching a bit
+        Treaty 5 mainly consists of the <span class="important">mid-south area of what now is Manitoba</span>, reaching a bit
         into Saskatchewan and Ontario.
       </p>
       <figure>
@@ -67,31 +86,35 @@
     </section>
     <section id="parties-and-promises">
       <h2>Parties & Promises</h2>
-      <p>The involved nations were:</p>
-      <ul id="involved-nations">
-        <li>Swampy Cree</li>
-        <li>Ojibway (Saulteaux)</li>
-        <li>Dene</li>
-      </ul>
-      <p>The promises consisted of:</p>
-      <ol id="promises">
-        <li>Everyone gets 160 acres of land.</li>
-        <li class="even-ol-item">Everyone gets $5 annually.</li>
-        <li>Headmen get $15 annually.</li>
-        <li class="even-ol-item">Chiefs get $25 annually.</li>
-        <li>Everyone keeps the right to continue hunting and fishing outside of locations where there are settlements, mines, or lumbering.</li>
-        <li class="even-ol-item">They will be provided with tools once.</li>
-        <li>Schools and education will be maintained.</li>
-        <li class="even-ol-item">$500 worth of ammunition and twine will be given.</li>
-        <li>$500 will be given to the people to start off with.</li>
-      </ol>
-      <p>I know that list wasn't very easy to read, but I don't really know what else to test with CSS.</p>
+      <div id="pnp-involved-nations">
+        <p>The involved nations were:</p>
+        <ul id="involved-nations">
+          <li>Swampy Cree</li>
+          <li>Ojibway (Saulteaux)</li>
+          <li>Dene</li>
+        </ul>
+      </div>
+      <div id="pnp-promises">
+        <p>The promises consisted of:</p>
+        <ol id="promises">
+          <li>Everyone gets 160 acres of land.</li>
+          <li class="even-ol-item">Everyone gets $5 annually.</li>
+          <li>Headmen get $15 annually.</li>
+          <li class="even-ol-item">Chiefs get $25 annually.</li>
+          <li>Everyone keeps the right to continue hunting and fishing outside of locations where there are settlements, mines, or lumbering.</li>
+          <li class="even-ol-item">They will be provided with tools once.</li>
+          <li>Schools and education will be maintained.</li>
+          <li class="even-ol-item">$500 worth of ammunition and twine will be given.</li>
+          <li>$500 will be given to the people to start off with.</li>
+        </ol>
+        <p>I know that list wasn't very easy to read, but I don't really know what else to test with CSS.</p>
+      </div>
     </section>
     <section id="modern-implementation">
       <h2>Modern Implementation</h2>
       <p>
-        Treaty promises are mostly still kept intact today. One example is qualified personel being granted
-        $5 annually, in favor of the Treaty.
+        Treaty promises are mostly still kept intact today. <span class="important">One example is qualified personel being granted
+        $5 annually</span>, in favor of the Treaty.
       </p>
       <p>
         Urban reserves such as <a href="https://swampycree.com/chemawawin-cree-nation/" target="_blank">Chemawawin</a>
