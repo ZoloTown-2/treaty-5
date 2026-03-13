@@ -1,0 +1,111 @@
+<!--
+  Name: Xander Thomson
+  Course: Grade 09 PTEC / Semester 2 / Web Development II (Room 120)
+  Teacher: Mr. Scott Hardman
+  School: Pembina Trails Collegiate
+  Date Last Modified: 03/13/2026
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page - Treaty #5 Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    section#parties-and-promises ul#involved-nations {
+      background-color: #dddd80; 
+    }
+    section#parties-and-promises ol#promises {
+      background-color: #dddd80;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    section#parties-and-promises ol#promises li.even-ol-item {
+      margin: 10px;
+      margin-left: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html#"><b>Home Page</b></a></li>
+        <li><a href="index.html#locations">Locations</a></li>
+        <li><a href="index.html#parties-and-promises">Parties & Promises</a></li>
+        <li><a href="index.html#modern-implementation">Modern Implementation</a></li>
+      </ul>
+      <hr />
+      <h1 style="font-style: italic;">Treaty #5 Website</h1>
+      <hr />
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>
+        This is a website about Treaty 5, concerning the First Nations. This website will
+        describe some of the events, locations, and details that had occurred within Treaty 5.
+      </p>
+    </section>
+    <section id="locations">
+      <h2>Locations</h2>
+      <p>Treaty 5 was negotiated at Berens River and Norway House in 1875.</p>
+      <figure>
+        <img src="images/berens-river.jpg" alt="A high-up view of Berens River, catching a lake and neighbouring trees." />
+        <img src="images/norway-house.jpg" alt="A high-up view of Norway House." />
+      </figure>
+      <p>
+        Treaty 5 mainly consists of the mid-south area of what now is Manitoba, reaching a bit
+        into Saskatchewan and Ontario.
+      </p>
+      <figure>
+        <img src="images/treaty-5-map.png" alt="A Google Maps rendering of Treaty 5 territory margins." />
+        <img src="images/treaty-5-map-expanded.png" alt="The same Google Maps rendering as the previous image, zoomed out." />
+      </figure>
+    </section>
+    <section id="parties-and-promises">
+      <h2>Parties & Promises</h2>
+      <p>The involved nations were:</p>
+      <ul id="involved-nations">
+        <li>Swampy Cree</li>
+        <li>Ojibway (Saulteaux)</li>
+        <li>Dene</li>
+      </ul>
+      <p>The promises consisted of:</p>
+      <ol id="promises">
+        <li>Everyone gets 160 acres of land.</li>
+        <li class="even-ol-item">Everyone gets $5 annually.</li>
+        <li>Headmen get $15 annually.</li>
+        <li class="even-ol-item">Chiefs get $25 annually.</li>
+        <li>Everyone keeps the right to continue hunting and fishing outside of locations where there are settlements, mines, or lumbering.</li>
+        <li class="even-ol-item">They will be provided with tools once.</li>
+        <li>Schools and education will be maintained.</li>
+        <li class="even-ol-item">$500 worth of ammunition and twine will be given.</li>
+        <li>$500 will be given to the people to start off with.</li>
+      </ol>
+      <p>I know that list wasn't very easy to read, but I don't really know what else to test with CSS.</p>
+    </section>
+    <section id="modern-implementation">
+      <h2>Modern Implementation</h2>
+      <p>
+        Treaty promises are mostly still kept intact today. One example is qualified personel being granted
+        $5 annually, in favor of the Treaty.
+      </p>
+      <p>
+        Urban reserves such as <a href="https://swampycree.com/chemawawin-cree-nation/" target="_blank">Chemawawin</a>
+        or <a href="https://www.cbc.ca/news/indigenous/first-nation-led-infrastructure-project-1.6933864" 
+          target="_blank"
+          onclick="alert('I could not find a reliable website regarding this place, so here\'s a news article instead.');">
+          Wàwàtéwàk Corridor</a>
+        have been created to allow First Nations the opportunities to build community.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <hr />
+    <p>&#169; <a href="mailto:xthomson@smail.pembinatrails.ca">Xander Thomson</a>, 2026</p>
+  </footer>
+</body>
+</html>
