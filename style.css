@@ -6,11 +6,17 @@
   be recognized as symbols of peace that should be respected.
   
   The colour palette is analogous.
+  
+  The primary colour is a light blue (#C0C0FF).
+  The secondary colour is a darker blue (#A0A0DD).
+  The tertiary colour is an even darker blue (#404099).
+  The neutral colour is black. (#101010).
 */
 * {
   line-height: 140%;
   letter-spacing: 0.01rem;
   word-spacing: 0.1rem;
+  color: #101010;
 }
 /* Changes the website's font size to be 62.5% of its container, the browser's frame. */
 html {
@@ -45,10 +51,10 @@ nav ul li {
 */
 nav ul li a {
   display: inline-block;
-  border: 2px solid black;
+  border: 2px solid #101010;
   padding: 5px;
   width: 40vw; /* Originally 20vw */
-  color: black;
+  color: #101010;
   background-color: #c0c0ff;
   text-decoration-line: none;
 }
