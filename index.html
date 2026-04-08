@@ -2,8 +2,8 @@
   Name: Xander Thomson
   Course: Grade 09 PTEC / Semester 2 / Web Development II (Room 120)
   Teacher: Mr. Scott Hardman
-  School: Pembina Trails Collegiate
-  Date Last Modified: 03/13/2026
+  School: Pembina Trails Collegiate + PTEC
+  Date Last Modified: 04/08/2026
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -13,24 +13,19 @@
   <title>Main Page - Treaty #5 Website</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Text marked as "important" will be bolded and underlined. */
-    .important {
-      font-weight: bold;
-      text-decoration: underline;
-    }
     /*
       The "involved-nations" unordered list within the "pnp-involved-nations" div within the "parties-and-promises"
       section will have a background colour of a shaded yellow.
     */
     section#parties-and-promises div#pnp-involved-nations ul#involved-nations {
-      background-color: #dddd80; 
+      background-color: #a0a0dd; 
     }
     /* 
       The "promises" ordered list within the "pnp-promises" div within the "parties-and-promises" section will
       have a background colour of a shaded yellow, as well as vertical padding.
     */
     section#parties-and-promises div#pnp-promises ol#promises {
-      background-color: #dddd80;
+      background-color: #a0a0dd;
       padding-top: 20px;
       padding-bottom: 20px;
     }
@@ -48,28 +43,37 @@
 <body>
   <header>
     <nav>
+      <!-- 
+        Old navigation:
+        
+        <ul>
+          <li><a href="index.html#"><b>Home Page</b></a></li>
+          <li><a href="index.html#locations">Locations</a></li>
+          <li><a href="index.html#parties-and-promises">Parties & Promises</a></li>
+          <li><a href="index.html#modern-implementation">Modern Implementation</a></li>
+        </ul>
+      -->
       <ul>
-        <li><a href="index.html#"><b>Home Page</b></a></li>
-        <li><a href="index.html#locations">Locations</a></li>
-        <li><a href="index.html#parties-and-promises">Parties & Promises</a></li>
-        <li><a href="index.html#modern-implementation">Modern Implementation</a></li>
+        <li><a href="index.html#" style="font-weight: bold;">Home Page</a></li>
+        <li><a href="additional-facts.html">Additional Facts</a></li>
       </ul>
       <hr />
-      <!-- This H1 tag will be itailc. -->
-      <h1 style="font-style: italic;">Treaty #5 Website</h1>
-      <hr />
     </nav>
+    <!-- This H1 tag will be itailc. -->
+    <h1 style="font-style: italic;">Treaty #5 Website</h1>
+    <h2>Main Page</h2>
+    <hr />
   </header>
   <main>
     <section>
-      <h2>Overview</h2>
+      <h3>Overview</h3>
       <p>
         This is a website about Treaty 5, concerning the First Nations. This website will
         describe some of the events, locations, and details that had occurred within Treaty 5.
       </p>
     </section>
     <section id="locations">
-      <h2>Locations</h2>
+      <h3>Locations</h3>
       <p>Treaty 5 was negotiated at <span class="important">Berens River</span> and <span class="important">Norway House</span> in 1875.</p>
       <figure>
         <img src="images/berens-river.jpg" alt="A high-up view of Berens River, catching a lake and neighbouring trees." />
@@ -85,7 +89,7 @@
       </figure>
     </section>
     <section id="parties-and-promises">
-      <h2>Parties & Promises</h2>
+      <h3>Parties & Promises</h3>
       <div id="pnp-involved-nations">
         <p>The involved nations were:</p>
         <ul id="involved-nations">
@@ -111,7 +115,7 @@
       </div>
     </section>
     <section id="modern-implementation">
-      <h2>Modern Implementation</h2>
+      <h3>Modern Implementation</h3>
       <p>
         Treaty promises are mostly still kept intact today. <span class="important">One example is qualified personel being granted
         $5 annually</span>, in favor of the Treaty.

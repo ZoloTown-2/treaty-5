@@ -1,6 +1,25 @@
-/* Changes the background colour of the website. */
+/*
+  I have set my website's primary colour to be blue as it represents wisdom and peace (according to
+  https://www.verywellmind.com/color-psychology-2795824).
+  
+  I chose this because I believe that the treaties and the people who are responsible for them should
+  be recognized as symbols of peace that should be respected.
+  
+  The colour palette is analogous.
+*/
+* {
+  line-height: 140%;
+  letter-spacing: 0.01rem;
+  word-spacing: 0.1rem;
+}
+/* Changes the website's font size to be 62.5% of its container, the browser's frame. */
+html {
+  font-size: 62.5%;
+}
+/* Changes the background colour and font size of the website. */
 body {
-  background-color: #ffffa0;
+  background-color: #c0c0ff;
+  font-size: 1.8rem;
 }
 /* The navigation list will be a flexbox with items spaced around each other, and no leftward indentation. */
 nav ul {
@@ -22,9 +41,9 @@ nav ul li a {
   display: inline-block;
   border: 2px solid black;
   padding: 5px;
-  width: 20vw;
+  width: 40vw; /* Originally 20vw */
   color: black;
-  background-color: #dddd80;
+  background-color: #a0a0dd;
   text-decoration-line: none;
 }
 /* Any image figures will be flexboxes that evenly space their items (images). */
@@ -34,13 +53,31 @@ figure {
 }
 /* Hyperlinks/anchors will be brown-ish. */
 a {
-  color: #555510;
+  color: #404099;
 }
 /* Hyperlinks/anchors will be red when hovered over with a mouse cursor. */
 a:hover {
-  color: red;
+  color: red  ;
 }
 /* Any heading will be centered. */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
+}
+/* Level 1 headers' sizes will be doubled. */
+h1 {
+  font-size: 200%;
+}
+/* Level 2 headers' sizes will be multiplied by 1.8. */
+h2 {
+  font-size: 180%;
+}
+/* Level 3 headers will be underlined and will have their sizes multiplied by 1.3. */
+h3 {
+  font-size: 130%;
+  text-decoration: underline;
+}
+/* Text marked as "important" will be bolded and underlined. */
+.important {
+  font-weight: bold;
+  text-decoration: underline;
 }
