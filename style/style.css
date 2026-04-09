@@ -77,6 +77,10 @@ figure#single-image-fig {
 figure img {
   box-shadow: 5px 5px 5px 0px #000000;
 }
+/* Figure captions will be italicised. */
+figcaption {
+  font-style: italic;
+}
 /* Figure breaks will take up an entire line, forcing the next row. They will also push 3 rem vertically. */
 .figbreak {
   flex-basis: 100%;
