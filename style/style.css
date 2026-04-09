@@ -58,13 +58,29 @@ nav ul li a {
   background-color: #c0c0ff;
   text-decoration-line: none;
 }
+/* Everything but the header will get typical margin. */
 main, footer {
   margin: 8px;
 }
 /* Any image figures will be flexboxes that evenly space their items (images). */
 figure {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+}
+/* Single-image figures will go in a column rather than a row. */
+figure#single-image-fig {
+  flex-flow: column;
+  align-items: center;
+}
+/* Images found within figures will be given shading. */
+figure img {
+  box-shadow: 5px 5px 5px 0px #000000;
+}
+/* Figure breaks will take up an entire line, forcing the next row. They will also push 3 rem vertically. */
+.figbreak {
+  flex-basis: 100%;
+  height: 3rem;
 }
 /* Hyperlinks/anchors will be brown-ish. */
 a {
