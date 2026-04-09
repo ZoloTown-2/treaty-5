@@ -68,11 +68,6 @@ figure {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-/* Single-image figures will go in a column rather than a row. */
-figure#single-image-fig {
-  flex-flow: column;
-  align-items: center;
-}
 /* Images found within figures will be given shading. */
 figure img {
   box-shadow: 5px 5px 5px 0px #000000;
