@@ -46,14 +46,14 @@ nav ul li {
 }
 /*
   The links within navigation list items are inline-blocks, black, and have a 2px border, 5px of padding
-  all around, a width of 20 viewport-width (changes depending on the width of the viewport), and a yellow-ish
+  all around, a width of 40 relative ems (relative to width of the character "m" on the client), and a blue-ish
   background colour.
 */
 nav ul li a {
   display: inline-block;
   border: 2px solid #101010;
   padding: 5px;
-  width: 40vw; /* Originally 20vw */
+  width: 40rem; /* Originally 20vw */
   color: #101010;
   background-color: #c0c0ff;
   text-decoration-line: none;
@@ -72,9 +72,11 @@ figure {
 figure img {
   box-shadow: 5px 5px 5px 0px #000000;
 }
-/* Figure captions will be italicised. */
+/* Figure captions will be italicised and given a 1px-thick underline. */
 figcaption {
   font-style: italic;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 /* Figure breaks will take up an entire line, forcing the next row. They will also push 3 rem vertically. */
 .figbreak {
