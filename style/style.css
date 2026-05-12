@@ -1,16 +1,5 @@
 /*
-  I have set my website's primary colour to be blue as it represents wisdom and peace (according to
-  https://www.verywellmind.com/color-psychology-2795824).
-  
-  I chose this because I believe that the treaties and the people who are responsible for them should
-  be recognized as symbols of peace that should be respected.
-  
-  The colour palette is analogous.
-  
-  The primary colour is a light blue (#C0C0FF).
-  The secondary colour is a darker blue (#A0A0DD).
-  The tertiary colour is an even darker blue (#404099).
-  The neutral colour is black. (#101010).
+  From what I can see, none of these properties require any prefixes for support.
 */
 * {
   line-height: 140%;
@@ -57,6 +46,12 @@ nav ul li a {
   color: #101010;
   background-color: #c0c0ff;
   text-decoration-line: none;
+  transition-property: transform;
+  transition-duration: 50ms;
+  transition-timing-function: ease-in;
+}
+nav ul li a:active {
+  transform: scale(0.95);
 }
 /* Everything but the header will get typical margin. */
 main, footer {
@@ -85,11 +80,20 @@ figcaption {
 }
 /* Hyperlinks/anchors will be brown-ish. */
 a {
-  color: #404099;
+  color: #29297f;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+a:visited {
+  color: #64297f;
 }
 /* Hyperlinks/anchors will be red when hovered over with a mouse cursor. */
 a:hover {
-  color: red  ;
+  color: red;
+}
+a.lone-anchor {
+  margin-left: 4rem;
 }
 /* Any heading will be centered. */
 h1, h2, h3, h4, h5, h6 {
@@ -107,6 +111,10 @@ h2 {
 h3 {
   font-size: 130%;
   text-decoration: underline;
+}
+/* Paragraphs will have some side-margin. */
+p {
+  margin: 0 4rem;
 }
 /* Text marked as "important" will be bolded and underlined. */
 .important {
