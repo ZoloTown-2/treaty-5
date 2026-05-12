@@ -44,10 +44,10 @@ nav ul li a {
   background-color: #c0c0ff;
   text-decoration-line: none;
   -moz-text-decoration-line: none;
-  transition: color 50ms ease-in-out;
-  -o-transition: color 50ms ease-in-out;
-  -moz-transition: color 50ms ease-in-out;
-  -webkit-transition: color 50ms ease-in-out;
+  transition: transform 50ms ease-in-out;
+  -o-transition: transform 50ms ease-in-out;
+  -moz-transition: transform 50ms ease-in-out;
+  -webkit-transition: transform 50ms ease-in-out;
 }
 nav ul li a:active {
   transform: scale(0.95);
