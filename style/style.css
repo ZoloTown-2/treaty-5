@@ -1,6 +1,3 @@
-/*
-  From what I can see, none of these properties require any prefixes for support.
-*/
 * {
   box-sizing: border-box;
   line-height: 140%;
@@ -47,12 +44,18 @@ nav ul li a {
   color: #101010;
   background-color: #c0c0ff;
   text-decoration-line: none;
-  transition-property: transform;
-  transition-duration: 50ms;
-  transition-timing-function: ease-in;
+  -moz-text-decoration-line: none;
+  transition: transform 50ms ease-in-out;
+  -o-transition: transform 50ms ease-in-out;
+  -moz-transition: transform 50ms ease-in-out;
+  -webkit-transition: transform 50ms ease-in-out;
 }
 nav ul li a:active {
   transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
 }
 /* Everything but the header will get typical margin. */
 main, footer {
@@ -82,9 +85,10 @@ figcaption {
 /* Hyperlinks/anchors will be brown-ish. */
 a {
   color: #29297f;
-  transition-property: color;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;
+  transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
+  -moz-transition: color 200ms ease-in-out;
+  -webkit-transition: color 200ms ease-in-out;
 }
 a:visited {
   color: #64297f;
