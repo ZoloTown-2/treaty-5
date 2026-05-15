@@ -2,6 +2,7 @@
   From what I can see, none of these properties require any prefixes for support.
 */
 * {
+  box-sizing: border-box;
   line-height: 140%;
   letter-spacing: 0.01rem;
   word-spacing: 0.1rem;
